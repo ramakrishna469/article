@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Articles</title>
+</head>
+<body>
+<table border=1>
+	<thead>
+		<th> Article ID</th>
+		<th> Name </th>
+		<th> Author </th>
+		<th> Created </th>
+	</thead>
+	{% for obj in articles %}
+	<tr>
+		<td>{{obj.id}}</td>
+		<td>{{obj.name}}</td>
+		<td>{{obj.author}}</td>
+		<td>{{obj.created}}</td>
+	</tr>
+	{% endfor %}
+</table>
+</body>
+</html>
